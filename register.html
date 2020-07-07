@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta  charset=ISO-8859-1>
+<title>Feedback Page</title>
+
+</head>
+<body>
+<h2>Your Feedback Matters!!</h2>
+<h5>Please provide your feedback below:</h5>
+
+<fieldset>
+<legend>Feedback Form</legend>
+<form method = "post" action= "/register">
+	Name: <input type = "text" name = "uname" required> <br><br>
+	
+	Email:  <input type = "email" name = "uemail" required> <br><br>
+	
+	Password:  <input type = "password" name = "pass" required> <br><br>
+		
+	Address:  <input type = "text" name = "uadd"> <br><br>
+	
+	Feedback : <input type ="text" name = "feed" list ="feed" required>
+	
+	<datalist id="feed">
+	<option>Excellent</option>
+	<option>Very Good</option>
+	<option>Good</option>
+	<option>Average</option>
+	<option>Below Average</option>
+	</datalist><br><br>
+	
+	Feel free to add Any Suggestions/Comments: <br>
+	<textarea rows="" cols="" name ="comments"></textarea><br><br>
+	
+	<input type = "submit" value = "Submit Feedback"> 
+</form>
+</fieldset>
+
+</body>
+</html>
